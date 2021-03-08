@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T10:23:41.475Z",
+        "line": 11,
+        "name": "Verify  if currency convertion from rates.json file",
+        "description": "",
+        "id": "validating-the-programming-assigment;verify--if-currency-convertion-from-rates.json-file;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2105528700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User select \"rates.PKR\" \"rates.USD\" \"100 \" from \"JsonFile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rates.PKR\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"rates.USD\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"100 \"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"JsonFile\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDefinition.user_select_from(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 365300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Show the The Exhange Rate and Converted Result",
+            "match": {
+              "location": "StepDefinition.show_the_The_Exhange_Rate_and_Converted_Result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RatesJson"
+          },
+          {
+            "name": "@UnitTesting1"
+          },
+          {
+            "name": "@IntegrationTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T10:23:43.627Z",
+        "line": 22,
+        "name": "Verify  if currency convertion from exchangeratesapi.io Api",
+        "description": "",
+        "id": "validating-the-programming-assigment;verify--if-currency-convertion-from-exchangeratesapi.io-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6461255900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select \"rates.PLN\" \"rates.USD\" \"100 \" from \"Api\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rates.PLN\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"rates.USD\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"100 \"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Api\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StepDefinition.user_select_from(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Show the The Exhange Rate and Converted Result",
+            "match": {
+              "location": "StepDefinition.show_the_The_Exhange_Rate_and_Converted_Result()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Api"
+          },
+          {
+            "name": "@UnitTesting2"
+          },
+          {
+            "name": "@IntegrationTest"
+          }
+        ]
+      }
+    ],
+    "name": "Validating the programming Assigment",
+    "description": "",
+    "id": "validating-the-programming-assigment",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidations.feature",
+    "tags": []
+  }
+]
